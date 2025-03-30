@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem 4rem 0rem 1.5rem;
+  background: linear-gradient(to bottom, rgba(117, 8, 8, 0.2) 10%, rgba(79, 79, 182, 0.8) 90%), repeating-linear-gradient(90deg, rgba(236, 220, 220, 0.3) 0px, rgba(255, 254, 254, 0.3) 10px, transparent 10px, transparent 20px), repeating-linear-gradient(0deg, rgba(248, 241, 241, 0.3) 0px, rgba(247, 240, 240, 0.3) 10px, transparent 10px, transparent 20px);
+  height: 91vh;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  justify-content: flex-start;
+  border-radius: 20px;
+  width: 40vw;
+}
+.intro img {
+  width: 60px;
+}
+.intro .text {
+  display: flex;
+  flex-direction: column;
+  font-family: poppins;
+}
+.intro .text #ready {
+  color: white;
+  font-size: 35px;
+}
+.intro .text #ready #sup {
+  font-family: train one;
+}
+.intro .text #work {
+  color: white;
+  font-size: 35px;
+}
+.intro .text #ai {
+  color: white;
+  white-space: nowrap;
+  font-size: 10px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: poppins;
+}
+.welcome #welc {
+  display: flex;
+  align-items: flex-start;
+  justify-self: flex-start;
+  font-weight: 600;
+  position: relative;
+  right: 6.5rem;
+  font-size: 20px;
+}
+.welcome #email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 14px;
+}
+.welcome #email #em {
+  font-weight: 500;
+  position: relative;
+  right: 8rem;
+}
+.welcome #email .input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  gap: 0.5rem;
+  width: 350px;
+}
+.welcome #email .input i {
+  color: grey;
+}
+.welcome #email .input input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 12px;
+}
+.welcome #pass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 14px;
+}
+.welcome #pass #pa {
+  font-weight: 500;
+  position: relative;
+  right: 9rem;
+}
+.welcome #pass a {
+  font-size: 10px;
+  font-weight: 500;
+  position: relative;
+  left: 8.5rem;
+  text-decoration: none;
+  color: black;
+}
+.welcome #pass .inp {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  gap: 0.5rem;
+  width: 350px;
+}
+.welcome #pass .inp i {
+  color: grey;
+}
+.welcome #pass .inp input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 12px;
+}
+.welcome button {
+  padding: 8px;
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 365px;
+  background-color: rgb(120, 64, 120);
+}
+.welcome .divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  width: 100%;
+  font-size: 15px;
+}
+.welcome .divider .line {
+  flex: 1;
+  height: 1px;
+  background-color: gray;
+  margin: 0 10px;
+}
+.welcome .continue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 12px;
+  font-weight: 400;
+}
+.welcome .continue .google {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.welcome .continue .google i {
+  font-size: 12px;
+}
+.welcome .continue .apple {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.welcome .continue .apple i {
+  font-size: 15px;
+}
+.welcome #account {
+  font-size: 12px;
+}
+.welcome #account a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .intro {
+    gap: 2rem;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    padding: 0 0 6rem 0;
+    border-radius: 0;
+  }
+  .intro img {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 50px;
+  }
+  .intro .text {
+    margin-left: 1rem;
+  }
+  .intro .text #ready {
+    font-size: 30px;
+  }
+  .intro .text #work {
+    font-size: 30px;
+  }
+  .intro .text #ai {
+    font-size: 8px;
+  }
+  .welcome {
+    margin-bottom: 3rem;
+  }
+  .welcome #welc {
+    right: 5.8rem;
+    font-size: 18px;
+  }
+  .welcome #email #em {
+    right: 7rem;
+  }
+  .welcome #email .input {
+    width: 320px;
+  }
+  .welcome #pass #pa {
+    right: 8rem;
+  }
+  .welcome #pass a {
+    left: 7.5rem;
+  }
+  .welcome #pass .inp {
+    width: 320px;
+  }
+  .welcome button {
+    width: 340px;
+  }
+  .welcome .divider {
+    width: 94%;
+  }
+  .welcome .continue .google {
+    width: 315px;
+  }
+  .welcome .continue .apple {
+    width: 315px;
+  }
+  .welcome #account {
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+  width: 100%;
+  height: 100%;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem 4rem 0rem 1.5rem;
+  background: linear-gradient(
+      to bottom,
+      rgba(117, 8, 8, 0.2) 10%,
+      rgba(79, 79, 182, 0.8) 90%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(236, 220, 220, 0.3) 0px,
+      rgba(255, 254, 254, 0.3) 10px,
+      transparent 10px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(248, 241, 241, 0.3) 0px,
+      rgba(247, 240, 240, 0.3) 10px,
+      transparent 10px,
+      transparent 20px
+    );
+  height: 91vh;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  justify-content: flex-start;
+  border-radius: 20px;
+  width: 40vw;
+  img {
+    width: 60px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+    #ready {
+      color: white;
+      font-size: 35px;
+      #sup {
+        font-family: train one;
+      }
+    }
+    #work {
+      color: white;
+      font-size: 35px;
+    }
+    #ai {
+      color: white;
+      white-space: nowrap;
+      font-size: 10px;
+    }
+  }
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: poppins;
+  #welc {
+    display: flex;
+    align-items: flex-start;
+    justify-self: flex-start;
+    font-weight: 600;
+    position: relative;
+    right: 6.5rem;
+    font-size: 20px;
+  }
+  #email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 14px;
+    #em {
+      font-weight: 500;
+      position: relative;
+      right: 8rem;
+    }
+    .input {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 8px;
+      gap: 0.5rem;
+      width: 350px;
+      i {
+        color: grey;
+      }
+      input {
+        border: none;
+        outline: none;
+        flex: 1;
+        font-size: 12px;
+      }
+    }
+  }
+  #pass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 14px;
+    #pa {
+      font-weight: 500;
+      position: relative;
+      right: 9rem;
+    }
+    a {
+      font-size: 10px;
+      font-weight: 500;
+      position: relative;
+      left: 8.5rem;
+      text-decoration: none;
+      color: black;
+    }
+    .inp {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 8px;
+      gap: 0.5rem;
+      width: 350px;
+      i {
+        color: grey;
+      }
+      input {
+        border: none;
+        outline: none;
+        flex: 1;
+        font-size: 12px;
+      }
+    }
+  }
+  button {
+    padding: 8px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 365px;
+    background-color: rgb(120, 64, 120);
+  }
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    width: 100%;
+    font-size: 15px;
+    .line {
+      flex: 1;
+      height: 1px;
+      background-color: gray;
+      margin: 0 10px;
+    }
+  }
+  .continue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 12px;
+    font-weight: 400;
+    .google {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      i {
+        font-size: 12px;
+      }
+    }
+    .apple {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      i {
+        font-size: 15px;
+      }
+    }
+  }
+  #account {
+    font-size: 12px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .intro {
+    gap: 2rem;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    padding: 0 0 6rem 0;
+    border-radius: 0;
+    img {
+      margin-left: 1rem;
+      margin-top: 1rem;
+      width: 50px;
+    }
+    .text {
+      margin-left: 1rem;
+      #ready {
+        font-size: 30px;
+      }
+      #work {
+        font-size: 30px;
+      }
+      #ai {
+        font-size: 8px;
+      }
+    }
+  }
+  .welcome {
+    margin-bottom: 3rem;
+    #welc {
+      right: 5.8rem;
+      font-size: 18px;
+    }
+    #email {
+      #em {
+        right: 7rem;
+      }
+      .input {
+        width: 320px;
+      }
+    }
+    #pass {
+      #pa {
+        right: 8rem;
+      }
+      a {
+        left: 7.5rem;
+      }
+      .inp {
+        width: 320px;
+      }
+    }
+    button {
+      width: 340px;
+    }
+    .divider {
+      width: 94%;
+    }
+    .continue {
+      .google {
+        width: 315px;
+      }
+      .apple {
+        width: 315px;
+      }
+    }
+    #account {
+      font-size: 11px;
+    }
+  }
+}
