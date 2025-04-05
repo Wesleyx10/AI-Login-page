@@ -218,6 +218,7 @@ body {
     margin-left: 1rem;
     margin-top: 1rem;
     width: 50px;
+    border-radius: 10px;
   }
   .intro .text {
     margin-left: 1rem;
