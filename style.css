@@ -142,6 +142,7 @@ body {
   border-radius: 8px;
   width: 365px;
   background-color: rgb(120, 64, 120);
+  cursor: pointer;
 }
 .welcome .divider {
   display: flex;
@@ -174,6 +175,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .welcome .continue .google i {
   font-size: 12px;
@@ -187,6 +189,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .welcome .continue .apple i {
   font-size: 15px;
@@ -264,5 +267,93 @@ body {
   }
   .welcome #account {
     font-size: 11px;
+  }
+}
+@media only screen and (min-width: 510px) and (max-width: 835px) {
+  body {
+    gap: 2rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .intro {
+    width: 85%;
+    align-items: center;
+    padding: 3rem;
+    gap: 5rem;
+    justify-content: center;
+    margin: 0;
+    height: 50vh;
+  }
+  .intro img {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    width: 100px;
+    border-radius: 15px;
+  }
+  .intro .text #ready {
+    font-size: 40px;
+  }
+  .intro .text #work {
+    font-size: 40px;
+  }
+  .intro .text #ai {
+    font-size: 20px;
+  }
+  .welcome {
+    margin-bottom: 5rem;
+    align-items: center;
+  }
+  .welcome #welc {
+    font-size: 35px;
+    right: 3rem;
+  }
+  .welcome #email {
+    font-size: 25px;
+  }
+  .welcome #email #em {
+    right: 6rem;
+  }
+  .welcome #email .input i {
+    font-size: 28px;
+  }
+  .welcome #email .input input {
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+  }
+  .welcome #pass {
+    font-size: 25px;
+  }
+  .welcome #pass #pa {
+    right: 7.5rem;
+  }
+  .welcome #pass a {
+    font-size: 15px;
+    left: 7rem;
+  }
+  .welcome #pass .inp i {
+    font-size: 28px;
+  }
+  .welcome #pass .inp input {
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+  }
+  .welcome button {
+    padding: 1rem;
+    font-size: 18px;
+  }
+  .welcome .divider span {
+    font-size: 25px;
+  }
+  .welcome .continue .google {
+    padding: 1rem;
+    width: 330px;
+  }
+  .welcome .continue .apple {
+    padding: 1rem;
+    width: 330px;
+  }
+  .welcome #account {
+    font-size: 17px;
   }
 }/*# sourceMappingURL=style.css.map */

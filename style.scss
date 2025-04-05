@@ -156,6 +156,7 @@ body {
     border-radius: 8px;
     width: 365px;
     background-color: rgb(120, 64, 120);
+    cursor: pointer;
   }
   .divider {
     display: flex;
@@ -187,6 +188,7 @@ body {
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
+      cursor: pointer;
       i {
         font-size: 12px;
       }
@@ -200,6 +202,7 @@ body {
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
+      cursor: pointer;
       i {
         font-size: 15px;
       }
@@ -283,6 +286,105 @@ body {
     }
     #account {
       font-size: 11px;
+    }
+  }
+}
+@media only screen and (min-width: 510px) and (max-width: 835px) {
+  body {
+    gap: 2rem;
+    // height: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .intro {
+    width: 85%;
+    align-items: center;
+    padding: 3rem;
+    gap: 5rem;
+    justify-content: center;
+    margin: 0;
+    height: 50vh;
+    img {
+      position: absolute;
+      top: 1rem;
+      left: 2rem;
+      width: 100px;
+      border-radius: 15px;
+    }
+    .text {
+      #ready {
+        font-size: 40px;
+      }
+      #work {
+        font-size: 40px;
+      }
+      #ai {
+        font-size: 20px;
+      }
+    }
+  }
+  .welcome {
+    margin-bottom: 5rem;
+    align-items: center;
+    #welc {
+      font-size: 35px;
+      right: 3rem;
+    }
+    #email {
+      font-size: 25px;
+      #em {
+        right: 6rem;
+      }
+      .input {
+        i {
+          font-size: 28px;
+        }
+        input {
+          padding: 0.5rem 1rem;
+          font-size: 18px;
+        }
+      }
+    }
+    #pass {
+      font-size: 25px;
+      #pa {
+        right: 7.5rem;
+      }
+      a {
+        font-size: 15px;
+        left: 7rem;
+      }
+      .inp {
+        i {
+          font-size: 28px;
+        }
+        input {
+          padding: 0.5rem 1rem;
+          font-size: 18px;
+        }
+      }
+    }
+    button {
+      padding: 1rem;
+      font-size: 18px;
+    }
+    .divider {
+      span {
+        font-size: 25px;
+      }
+    }
+    .continue {
+      .google {
+        padding: 1rem;
+        width: 330px;
+      }
+      .apple {
+        padding: 1rem;
+        width: 330px;
+      }
+    }
+    #account {
+      font-size: 17px;
     }
   }
 }
